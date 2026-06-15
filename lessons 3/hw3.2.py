@@ -1,12 +1,13 @@
-list = [12, 3, 4, 10]
-#list = [1]
-#list = []
-#list = [12, 3, 4, 10, 8]
-old_list =list.copy()
-if len(list) == 0:
-    print(f"{old_list} => {list}")
+numbers = [12, 3, 4, 10]
+#numbers = [1]
+#numbers = []
+#numbers = [12, 3, 4, 10, 8]
+
+old_numbers = numbers.copy()
+
+if len(numbers) <= 1:
+    print(f"{old_numbers} => {numbers}")
 else:
-    last_number = list[len(list) - 1]
-    list.remove(last_number)
-    list.insert(0,last_number)
-    print(f"{old_list} => {list}")
+    last_number = numbers.pop()
+    numbers.insert(0,last_number)
+    print(f"{old_numbers} => {numbers}")
